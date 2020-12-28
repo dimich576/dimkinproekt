@@ -1,0 +1,107 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Solutions page";
+  - var pageClass = "solutionspage";
+  - var pageActive = "solutionspage";
+block content
+  .main
+    .main-info.products
+      .main-info__inner.container.page-container.products.solutions
+        .main-info__block.products
+          .custom-border-title.products Solutions
+          h1.main-info__title.products Create Memorable Customer Experiences
+          .main-info__txt.products after 12 years and over 40,000 customers, we know good experiences are built from a perfect blend of customer centricity, technology, and data, with a reliable partner at your side
+          a(href="#").main-info__btn.products explore
+        .main-info__img.products
+          img(src="./img/images/rafiki.png").main-info__img-img.products
+        img(src="./img/images/block-3-box-illustration.svg").page-tab-content__background-img.first.solutions
+        img(src="./img/images/block-3-wave-illustration.png").page-tab-content__background-img.second.solutions
+    .page-tabs.page-container.solutions
+      .page-tabs__item(data-tab="tab-one").active Big data
+      .page-tabs__item(data-tab="tab-two") Viber + SMS
+      .page-tabs__item(data-tab="tab-third") Short Code
+      .page-tabs__item(data-tab="tab-four") Long Number
+      .page-tabs__item(data-tab="tab-five") 2Way Numbers
+      .page-tabs__item(data-tab="tab-six") Bulk SMS
+    .page-tab-content.page-container.solutions
+      .page-tab-content__inner.page-container.solutions
+        .page-tab-content__left
+          .page-tab__body(data-tab-content="tab-one").active
+            .page-tab-content__name Solutions
+            .page-tab-content__title Big data
+            .page-tab-content__txt Big data is the designation of structured unstructured data of huge volumes and significant data processed by horizontally scalable software tools, which appeared in the late 2000s and is an alternative to traditional database management systems and solutions of the Business Intelligence class.
+          .page-tab__body(data-tab-content="tab-two")
+            .page-tab-content__name Solutions
+            .page-tab-content__title VIBER + SMS
+            .page-tab-content__txt Big data is the designation of structured unstructured data of huge volumes and significant data processed by horizontally scalable software tools, which appeared in the late 2000s and is an alternative to traditional database management systems and solutions of the Business Intelligence class.
+          .page-tab__body(data-tab-content="tab-third")
+            .page-tab-content__name Solutions
+            .page-tab-content__title SORT CODE
+            .page-tab-content__txt Big data is the designation of structured unstructured data of huge volumes and significant data processed by horizontally scalable software tools, which appeared in the late 2000s and is an alternative to traditional database management systems and solutions of the Business Intelligence class.
+          .page-tab__body(data-tab-content="tab-four")
+            .page-tab-content__name Solutions
+            .page-tab-content__title LONG NUMBER
+            .page-tab-content__txt Big data is the designation of structured unstructured data of huge volumes and significant data processed by horizontally scalable software tools, which appeared in the late 2000s and is an alternative to traditional database management systems and solutions of the Business Intelligence class.
+          .page-tab__body(data-tab-content="tab-five")
+            .page-tab-content__name Solutions
+            .page-tab-content__title Big data
+            .page-tab-content__txt Big data is the designation of structured unstructured data of huge volumes and significant data processed by horizontally scalable software tools, which appeared in the late 2000s and is an alternative to traditional database management systems and solutions of the Business Intelligence class.
+          .page-tab__body(data-tab-content="tab-six")
+            .page-tab-content__name Solutions
+            .page-tab-content__title Big data
+            .page-tab-content__txt Big data is the designation of structured unstructured data of huge volumes and significant data processed by horizontally scalable software tools, which appeared in the late 2000s and is an alternative to traditional database management systems and solutions of the Business Intelligence class.
+          .page-tab-content__btns
+            .page-tab-content__navs
+              .page-tab-content__nav-item.first-nav__item.solutions
+                .page-tab-content__nav-item-img.solutions prev
+              .page-tab-content__nav-item.second-nav__item.solutions.active
+                .page-tab-content__nav-item-img.solutions next
+            a(href="#").page-tab-content__btn READ MORE
+        .page-tab-content__right
+          .page-tab-content__img
+            //img(src="./img/images/block-3-illlustration.png").page-tab-content__img-img
+            picture
+              source(srcset="./img/images/block-3-illlustration.webp" type="image/webp")
+              img(src="./img/images/block-3-illlustration.png" alt="img").page-tab-content__img-img
+          .page-tab-content__navs.mobile
+            .page-tab-content__nav-item
+              img(src="./img/images/short_left.svg").page-tab-content__nav-item-img
+            .page-tab-content__nav-item.active
+              img(src="./img/images/short_right.svg").page-tab-content__nav-item-img
+    .check-out
+      .check-out__inner.page-container
+        .check-out__left
+          .check-out__title Check out our products
+          .check-out__txt Reach every mobile phone on the planet - in seconds or less. Sinch provides all the tools you need to get closer to your customers.
+          .custom-block-btn.solutions get started
+        .check-out__right
+          img(src="./img/images/pana2.png")
+    .custom-wrap.contact-us
+      .page-wide-block.contact-us
+        .page-wide-block__inner.page-container.contact-us
+          .custom-border-title.contact-us contact us
+          .contact-us__container
+            .page-wide-block__left-side.contact-us
+              .contact-us__text *If you have any question please visit our Help desk. If you can`t find the answer please call us or e-mail
+              form
+                .form-row
+                  .form-col
+                    .form-row__txt Your name
+                    input(type="text").form-row__input
+                  .form-col.email
+                    .form-row__txt Your email
+                    input(type="email").form-row__input.email
+                .form-row.text-area
+                  .form-row__txt Type your message
+                  textarea.form-row__textarea
+                .form-row__submit
+                  button(type="submit").form-row__submit-btn
+                  a(href="").form-row__submit-i Send
+            .page-wide-block__right-side.contact-us
+              img(src="./img/images/bro2.png").contact-us__img
+
+
+
+
+

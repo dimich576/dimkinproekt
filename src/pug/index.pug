@@ -1,0 +1,19 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Home page";
+  - var pageClass = "homepage";
+  - var pageActive = "homepage";
+block content
+  div.main-wrap
+    div.prevpage(style="margin: 0 auto; height: 490px; display: flex; justify-content: center; color: black; flex-direction: column; align-items: center; background-color: white;")
+      div
+        a(href="./index1.html" style="font-size: 18px;") Главная
+      div
+        a(href="./Contacts.html" style="font-size: 18px;") Contacts
+      div
+        a(href="./integration.html" style="font-size: 18px;") integration
+      div
+        a(href="./products.html" style="font-size: 18px;") products
+      div
+        a(href="./solutions.html" style="font-size: 18px;") solutions

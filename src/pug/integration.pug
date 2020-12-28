@@ -1,0 +1,73 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Integration page";
+  - var pageClass = "integrationpage";
+  - var pageActive = "integrationpage";
+block content
+  .main
+    .main-info.products
+      .main-info__inner.container.page-container.products
+        .main-info__block.products
+          .custom-border-title.products integration
+          h1.main-info__title.products customize our flexible system completely for yourself!
+          .main-info__txt.products here are collected a variety of options for working with our system especially for you!
+          a(href="#").main-info__btn.products explore
+        .main-info__img.products
+          img(src="./img/images/bro3.png").main-info__img-img.products
+    .connection
+      .connection__inner.page-container
+        .connection__title Connection options
+        .connection__list
+          .connection__item
+            .connection__img
+              img(src="./img/images/Ellipse11.png").connection__img-img
+            .connection__item-title SMPP
+            .connection__txt In particular, consultation with a broad asset is an interesting experiment in testing new proposals.
+            .connection__btns
+              a(href="#").connection__btn about
+              a(href="#").connection__btn.active connect
+          .connection__item
+            .connection__img
+              img(src="./img/images/Ellipse12.png").connection__img-img
+            .connection__item-title HTML
+            .connection__txt In particular, consultation with a broad asset is an interesting experiment in testing new proposals.
+            .connection__btns
+              a(href="#").connection__btn about
+              a(href="#").connection__btn.active connect
+          .connection__item
+            .connection__img
+              img(src="./img/images/Ellipse13.png").connection__img-img
+            .connection__item-title Title
+            .connection__txt In particular, consultation with a broad asset is an interesting experiment in testing new proposals.
+            .connection__btns
+              a(href="#").connection__btn about
+              a(href="#").connection__btn.active connect
+    .custom-wrap.contact-us
+      .page-wide-block.contact-us
+        .page-wide-block__inner.page-container.contact-us
+          .custom-border-title.contact-us contact us
+          .contact-us__container
+            .page-wide-block__left-side.contact-us
+              .contact-us__text *If you have any question please visit our Help desk. If you can`t find the answer please call us or e-mail
+              form
+                .form-row
+                  .form-col
+                    .form-row__txt Your name
+                    input(type="text").form-row__input
+                  .form-col.email
+                    .form-row__txt Your email
+                    input(type="email").form-row__input.email
+                .form-row.text-area
+                  .form-row__txt Type your message
+                  textarea.form-row__textarea
+                .form-row__submit
+                  button(type="submit").form-row__submit-btn
+                  a(href="").form-row__submit-i Send
+            .page-wide-block__right-side.contact-us
+              img(src="./img/images/bro2.png").contact-us__img
+
+
+
+
+
