@@ -9,16 +9,18 @@ block content
     .main-info.products
       .main-info__inner.container.page-container.products
         .main-info__block.products
-          .custom-border-title.products Contacts
-          h1.main-info__title.products Need a consultation? Call us!
-          .main-info__txt.products all contact information of our company is collected here
+          .custom-border-title.products.contacts Contacts
+          h1.main-info__title.products.contacts Need a consultation? Call us!
+          .main-info__txt.products.contacts all contact information of our company is collected here
           a(href="#").main-info__btn.products explore
         .main-info__img.products
-          img(src="./img/images/bro4.png").main-info__img-img.products
+          picture
+            source(srcset="./img/images/bro4.webp" type="image/webp")
+            img(src="./img/images/bro4.png" alt="img").main-info__img-img.products.contacts
+          //img(src="./img/images/bro4.png").main-info__img-img.products.contacts
     .get-touch
       .get-touch__inner.page-container
         .page-wide-block__left-side.contacts
-          .custom-border-title.contacts CONTACTS
           .custom-block-title.contacts Get in touch
           .contact-row
             .contact-row__ico
@@ -47,7 +49,10 @@ block content
             a(href="#").contact-row__txt Hicell
         .page-wide-block__right-side.contacts
           .right-side__img
-            img(src="./img/images/illustration11.png").right-side__img
+            picture
+              source(srcset="./img/images/illustration11.webp" type="image/webp")
+              img(src="./img/images/illustration11.png" alt="img").right-side__img.contacts
+            //img(src="./img/images/illustration11.png").right-side__img.contacts
     .custom-geolocation
       .custom-geolocation__inner.page-container
         .custom-block-title.our Our geolocation
@@ -75,7 +80,10 @@ block content
                   button(type="submit").form-row__submit-btn
                   a(href="").form-row__submit-i Send
             .page-wide-block__right-side.contact-us
-              img(src="./img/images/bro2.png").contact-us__img
+              picture
+                source(srcset="./img/images/bro2.webp" type="image/webp")
+                img(src="./img/images/bro2.png" alt="img").contact-us__img
+              //img(src="./img/images/bro2.png").contact-us__img
 
 
 

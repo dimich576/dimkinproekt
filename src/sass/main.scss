@@ -106,16 +106,16 @@ body{
 .header{
   background: white;
   position: relative;
-  z-index: 2;
+  z-index: 15;
 
   @include for-1024{
-      filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.06));
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
   }
 }
 
 .header-inner{
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 11px;
+  padding-bottom: 19px;
 }
 
 .header-top{
@@ -173,7 +173,7 @@ body{
     background: #FFFFFF;
     border: 1px solid #F8981D;
     box-shadow: 0px 4px 8px rgba(255, 164, 0, 0.2);
-    border-radius: 2px;
+    border-radius: 3px;
   }
 
   &__input{
@@ -194,11 +194,19 @@ body{
   }
 
   &__contacts-mail{
-
+    font-size: 14px;
+    line-height: 16px;
+    font-variant: small-caps;
+    color: #111111;
+    text-align: right;
   }
 
   &__contacts-phone{
-
+    text-align: right;
+    font-size: 14px;
+    line-height: 16px;
+    font-variant: small-caps;
+    color: #111111;
   }
 
 }
@@ -223,6 +231,11 @@ body{
     line-height: 19px;
     font-style: normal;
     font-weight: normal;
+    transition: .2s;
+
+    &:hover{
+      color: #FFA400;
+    }
   }
 
   &__item:last-child{
@@ -239,10 +252,13 @@ body{
     font-size: 13px;
     line-height: 16px;
     margin-right: 11px;
+
+    &:last-child{
+      margin-right: 0;
+    }
   }
 
   &__log-in.sign-up{
-    color: #111111;
     font-size: 14px;
     line-height: 16px;
     background: #FFA400;
@@ -252,6 +268,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-variant: small-caps;
+    color: #000000;
   }
 
 }
@@ -260,7 +278,8 @@ body{
   background: white;
   position: relative;
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.45));
-  z-index: 1;
+  //z-index: 1;
+  z-index: 5;
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -298,6 +317,7 @@ body{
       font-size: 31px;
       line-height: 98.69%;
       margin-bottom: 15px;
+      text-align: center;
     }
 
     @include for-768{
@@ -374,6 +394,10 @@ body{
   }
 }
 
+.main-info__img-img.products.contacts{
+  margin-bottom: 49px;
+}
+
 
 .main-info:after{
   content: '';
@@ -397,6 +421,12 @@ body{
     text-transform: uppercase;
     max-width: 532px;
   }
+  @include for-420{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 98.69%;
+  }
 }
 
 .main-info__txt.products{
@@ -411,6 +441,25 @@ body{
     line-height: 28px;
     text-align: center;
     max-width: 532px;
+  }
+  @include for-480{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+.main-info__txt.products.contacts{
+  text-transform: uppercase;
+  font-size: 22px;
+  @include for-480{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
   }
 }
 
@@ -455,6 +504,8 @@ body{
   align-items: center;
   position: relative;
   margin-top: 90px;
+  transform: translateX(-11px);
+
   @include for-1024{
     font-size: 15px;
     width: 161px;
@@ -480,7 +531,7 @@ body{
   transform: rotate(90deg);
   background: white;
   top: -45px;
-  left: -15px;
+  left: -2px;
 }
 
 .page-title-flag:after{
@@ -493,7 +544,7 @@ body{
   transform: rotate(90deg);
   background: white;
   top: -45px;
-  right: 0;
+  right: -5px;
   @include for-768{
     right: -16px;
   }
@@ -592,6 +643,36 @@ body{
 .page-tab-content.page-container.solutions{
   max-width: 1546px;
   margin: 0 auto;
+  position: relative;
+  padding-left: 0;
+  @include for-1024{
+    margin-top: 70px;
+  }
+  @include for-420{
+    padding-left: 0;
+  }
+}
+
+.page-tab-content__background-img.second{
+  @include for-1024{
+    right: 0;
+  }
+}
+
+.page-tab-content__background-img.second.tab{
+  visibility: hidden;
+  @include for-1024{
+    visibility: visible;
+    top: 17%;
+    width: 77px;
+    right: 0px;
+  }
+}
+
+.page-tab-content__background-img.second.solutions{
+  @include for-1024{
+    display: none;
+  }
 }
 
 .page-tab-content__img-img{
@@ -622,6 +703,12 @@ body{
     display: flex;
     justify-content: center;
     color: white;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   &__img{
@@ -634,13 +721,31 @@ body{
 
   &__img-img{
     max-width: 360px;
-    height: auto;
+    //height: auto;
+    height: 248px;
+    object-fit: contain;
     width: 100%;
-    @include for-1024{
-      max-width: 287px;
-      height: auto;
-      width: 100%;
+
+    @include for-1400{
+      max-width: 258px;
+      height: 177px;
     }
+
+    @include for-768{
+      max-width: 237px;
+      height: 162px;
+    }
+
+    @include for-550{
+      max-width: 174px;
+      height: 119px;
+    }
+
+    //@include for-1024{
+    //  max-width: 258px;
+    //  height: auto;
+    //  width: 100%;
+    //}
   }
 
   &__txt{
@@ -652,16 +757,53 @@ body{
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.45), 0px 0px 5px rgba(255, 164, 0, 0.45);
     border-radius: 5px;
     position: relative;
-    height: 268px;
-    align-items: flex-end;
+    //height: 268px;
+    min-height: 250px;
+    //align-items: flex-end;
     text-align: center;
-    padding: 0 10px 40px;
-    margin-top: -114px;
+    //padding: 0 10px 40px;
+    margin-top: -125px;
+    max-width: 404px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding-top: 157px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 50px;
+    min-height: 261px;
+
+
+
     @include for-1024{
       font-size: 20px;
-      line-height: 27px;
-      max-width: 300px;
+      max-width: 307px;
       width: 100%;
+      margin-top: -79px;
+      padding-top: 104px;
+      line-height: 23px;
+      padding-bottom: 40px;
+    }
+
+    @include for-768{
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      padding-bottom: 22px;
+      min-height: initial;
+
+      padding-top: 96px;
+      margin-top: -81px;
+    }
+
+    @include for-550{
+      max-width: 207px;
+      font-size: 12px;
+      line-height: 14px;
+
+      padding-top: 75px;
+      margin-top: -60px;
     }
   }
 
@@ -717,6 +859,10 @@ body{
 .product-card{
   transition: .3s;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .site-slider-js{
@@ -744,11 +890,11 @@ body{
 }
 
 .swiper-container{
-  padding-top: 100px;
+  padding-top: 96px;
   padding-left: 15px;
   padding-right: 15px;
   @include for-1024{
-    padding-top: 14px;
+    padding-top: 28px;
   }
   @include for-768{
     padding-top: 36px;
@@ -771,6 +917,8 @@ body{
     transform: initial;
     text-align: initial;
     width: initial;
+
+
   }
 
 
@@ -805,7 +953,8 @@ body{
     color: #959595;
     @include for-1024{
       right: 259px;
-      top: -34px;
+      top: -24px;
+
     }
     @include for-768{
       right: 10px;
@@ -877,6 +1026,7 @@ body{
   padding-top: 66px;
   position: relative;
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.45));
+  padding-left: 0;
   @include for-1024{
     //margin-top: 50px;
     padding-top: 27px;
@@ -906,7 +1056,7 @@ body{
     @include for-1024{
       top: 13%;
       width: 77px;
-      right: 10px;
+
     }
     @include for-768{
       top: 20%;
@@ -949,6 +1099,9 @@ body{
       width: 119px;
       font-size: 17px;
     }
+    @include for-550{
+      display: none;
+    }
   }
 
   &__title{
@@ -961,11 +1114,25 @@ body{
     @include for-1024{
       font-size: 20px;
       margin-top: 18px;
+      margin-bottom: 10px;
+
     }
     @include for-768{
       font-weight: 500;
       font-size: 18px;
       line-height: 21px;
+    }
+    @include for-550{
+      font-style: italic;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @include for-420{
+      font-style: italic;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 
@@ -982,8 +1149,17 @@ body{
       margin-top: 0px;
     }
     @include for-768{
-      font-size: 18px;
-      line-height: 21px;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    @include for-420{
+      font-style: italic;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 
@@ -1026,6 +1202,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    @include for-420{
+      width: 24px;
+      height: 24px;
+    }
   }
 
   &__nav-item.active{
@@ -1058,6 +1238,21 @@ body{
     }
     @include for-768{
       margin-top: 19px;
+    }
+
+    @include for-550{
+      width: 102px;
+      height: 24px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    @include for-420{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 
@@ -1109,7 +1304,7 @@ body{
     max-width: initial;
   }
   &__inner{
-    padding: 5px 40px;
+    padding: 30px 40px 25px;
     @include for-768{
       padding: 9px 40px;
     }
@@ -1124,7 +1319,6 @@ body{
     font-size: 28px;
     line-height: 33px;
     margin-bottom: 22px;
-    margin-top: 10px;
     @include for-1024{
       justify-content: flex-start;
       font-size: 20px;
@@ -1135,6 +1329,11 @@ body{
       justify-content: flex-start;
       margin-top: 27px;
     }
+    @include for-550{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   &__row{
@@ -1144,6 +1343,12 @@ body{
     padding: 10px 0;
     margin: 10px 0;
     border-bottom: 1px solid #dadada;
+
+    &:nth-last-child(2){
+      border-bottom: 0;
+    }
+
+
     @include for-768{
       font-weight: normal;
       font-size: 18px;
@@ -1160,6 +1365,17 @@ body{
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
+    @include for-550{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    @include for-420{
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
   &__row-cost{
@@ -1168,7 +1384,18 @@ body{
     font-size: 18px;
     line-height: 21px;
     @include for-1024{
-      padding-right: 36px;
+
+    }
+
+    @include for-550{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @include for-420{
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 
@@ -1223,7 +1450,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 541px;
+  max-width: 525px;
   width: 100%;
   @include for-1024{
     max-width: initial;
@@ -1352,6 +1579,11 @@ body{
       font-size: 18px;
       line-height: 21px;
     }
+    @include for-550{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }
 
@@ -1381,6 +1613,11 @@ body{
   }
   @include for-768{
     font-size: 18px;
+  }
+  @include for-480{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
@@ -1456,6 +1693,15 @@ body{
   margin-bottom: 48px;
 }
 
+.custom-border-title.blog.products{
+  color: white;
+  filter: drop-shadow(0px 0px 5px rgba(255, 164, 0, 0.45));
+  border: 2px solid #FDB64E;
+  box-sizing: border-box;
+  background: transparent;
+  margin-bottom: 50px;
+}
+
 .main-info__btn.products{
   width: 145px;
   height: 40px;
@@ -1468,6 +1714,12 @@ body{
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
+  }
+
+  @include for-480{
+    height: 24px;
+    font-size: 14px;
+    width: 100px;
   }
 }
 
@@ -1483,8 +1735,27 @@ body{
   }
 }
 
+.custom-border-title.products.contacts{
+  margin-top: 32px;
+}
+
+.main-info__title.products.contacts{
+  font-size: 24px;
+  @include for-480{
+    line-height: 98.69%;
+  }
+}
+
 .custom-border-title.contact-us{
   text-transform: uppercase;
+  margin-bottom: 7px;
+  @include for-480{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    width: 140px;
+    height: 31px;
+  }
 }
 
 .custom-border-title.bro{
@@ -1508,7 +1779,13 @@ body{
     align-items: center;
     text-align: center;
     font-size: 24px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
+  }
+  @include for-550{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
   }
 }
 
@@ -1547,6 +1824,11 @@ body{
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 16px;
+  }
+  @include for-480{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 
@@ -1593,6 +1875,11 @@ body{
     line-height: 21px;
     text-align: center;
   }
+  @include for-550{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .custom-block-txt.our{
@@ -1600,9 +1887,16 @@ body{
   font-size: 21px;
   @include for-1024{
     font-size: 17px;
+    margin-top: 15px;
   }
   @include for-768{
     font-size: 16px;
+  }
+
+  @include for-420{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
@@ -1635,6 +1929,11 @@ body{
     margin-bottom: 20px;
     font-size: 22px;
   }
+  @include for-550{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .page-sms-right__block-inner.second{
@@ -1648,7 +1947,13 @@ body{
 }
 
 .page-sms-right__block-txt.first{
-  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  font-variant: small-caps;
 }
 
 .custom-block-btn__wrap{
@@ -1702,19 +2007,19 @@ body{
 }
 
 .page-wide-block__inner.page-container.integration-right{
-  padding-bottom: 0;
+  //padding-bottom: 0;
   @include for-768{
     padding: 11px 15px;
   }
 }
 
-page-wide-block__inner page-container integration-right
-
 .custom-block-btn.swiper-slide__btn{
-  max-width: 123px;
+  max-width: initial;
+  width: fit-content;
   height: 29px;
   font-size: 13px;
   text-transform: uppercase;
+  padding: 0 36px;
 }
 
 .custom-block-btn__wrap.mobile{
@@ -1776,6 +2081,14 @@ page-wide-block__inner page-container integration-right
 
 .right-side__img{
 
+}
+
+.right-side__img.contacts{
+  max-width: 375px;
+  @include for-480{
+    width: 100%;
+    max-width: initial;
+  }
 }
 
 .right-side__title{
@@ -1899,6 +2212,12 @@ page-wide-block__inner page-container integration-right
 .page-wide-block__inner.page-container.contact-us{
   position: relative;
   flex-direction: column;
+  padding-bottom: 0;
+  padding-top: 38px;
+}
+
+.page-wide-block.contact-us:after{
+  display: none;
 }
 
 .contact-us__container{
@@ -1930,6 +2249,15 @@ page-wide-block__inner page-container integration-right
     line-height: 23px;
     text-align: center;
   }
+
+  @include for-480{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 .page-wide-block__inner.page-container.contact-us:before{
@@ -1942,6 +2270,9 @@ page-wide-block__inner page-container integration-right
   width: 120px;
   height: 0px;
   left: -40px;
+  @include for-1024{
+    left: 20px;
+  }
 }
 
 .page-wide-block__inner.page-container.contact-us:after{
@@ -1954,6 +2285,9 @@ page-wide-block__inner page-container integration-right
   width: 120px;
   height: 0px;
   right: -40px;
+  @include for-1024{
+    right: 20px;
+  }
 }
 
 .page-wide-block.bro{
@@ -2018,6 +2352,9 @@ page-wide-block__inner page-container integration-right
   width: 100%;
   @include for-1024{
     border: none;
+  }
+  @include for-480{
+    max-width: 282px;
   }
 }
 
@@ -2088,6 +2425,10 @@ page-wide-block__inner page-container integration-right
   }
   @include for-1024{
     position: absolute;
+    opacity: 0.2;
+    width: initial;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -2104,7 +2445,7 @@ page-wide-block__inner page-container integration-right
 
 .page-wide-block__inner.contacts .right-side__img{
   @include for-1024{
-    opacity: 0.3;
+
   }
   @include for-768{
     width: 100%;
@@ -2137,12 +2478,28 @@ page-wide-block__inner page-container integration-right
     }
     @include for-480{
       margin-right: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @include for-420{
+      max-width: 74px;
     }
   }
 
   &__txt{
     @include for-1024{
       font-size: 19px;
+    }
+    @include for-480{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @include for-420{
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 
@@ -2320,12 +2677,25 @@ a.contact-row__txt{
 }
 
 .footer-col-item{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 0;
+  margin-bottom: 16px;
   @include for-768{
     line-height: 25px;
+  }
+
+  @include for-480{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
 .footer-col-item.adress{
+  max-width: 307px;
   @include for-1024{
     max-width: 280px;
     text-align: center;
@@ -2353,7 +2723,7 @@ a.contact-row__txt{
 }
 
 .footer-col-item a:hover{
-  text-shadow: 0 0 6px black;
+  color: #FFA401;
 }
 
 .footer:before{
@@ -2377,6 +2747,8 @@ a.contact-row__txt{
 
 .footer__inner{
   display: flex;
+  padding-top: 33px;
+  padding-bottom: 5px;
   @include for-768{
     padding-bottom: 25px;
   }
@@ -2417,6 +2789,7 @@ a.contact-row__txt{
     @include for-1024{
       margin-right: 13px;
     }
+
   }
 
   &__list{
@@ -2425,14 +2798,21 @@ a.contact-row__txt{
     flex-direction: column;
     background: white;
     padding: 20px;
-    width: 300px;
-    transition: .3s;
-    z-index: 100;
+    width: 280px;
     left: 0;
     top: 0;
-    height: 100vh;
+    transition: .3s;
+    z-index: 500;
+    height: auto;
+    overflow-y: auto;
     transform: translateX(-100%);
     box-shadow: 0 0 20px -15px black;
+  }
+
+  &__list-inner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   &__list.opened{
@@ -2458,10 +2838,26 @@ a.contact-row__txt{
 
 }
 
+.header-mobile__search-img{
+  width: 19px;
+  height: 19px;
+}
+
+.header-mobile__menu-img{
+  @include for-480{
+    width: 19px;
+    height: 19px;
+  }
+}
+
 .header-mobile__logo-img{
   @include for-768{
     max-width: 136px;
     width: 100%;
+  }
+  @include for-480{
+    max-width: 100px;
+    height: auto;
   }
 }
 
@@ -2486,11 +2882,36 @@ a.contact-row__txt{
     font-size: 28px;
     line-height: 33px;
     color: #20274C;
-    border-top: 2px solid #20274C;
+    border-top: 2px solid #dadada;
     margin-top: 50px;
+    position: relative;
     @include for-1024{
       text-align: center;
     }
+    @include for-550{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+    border: none;
+    }
+    @include for-350{
+      margin-top: 25px;
+      padding-top: 25px;
+    }
+  }
+
+  &__title:before{
+    content: '';
+    height: 2px;
+    max-width: 207px;
+    width: 100%;
+    color: #dadada;
+    position: absolute;
+    display: block;
+    background: #dadada;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
   }
 
   &__list{
@@ -2532,6 +2953,12 @@ a.contact-row__txt{
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 15px;
+    @include for-550{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+    }
   }
 
   &__block{
@@ -2548,6 +2975,16 @@ a.contact-row__txt{
     width: 100%;
     height: auto;
     max-width: 360px;
+
+
+    @include for-768{
+
+    }
+
+    @include for-550{
+      max-width: 174px;
+      height: 119px;
+    }
   }
 
   &__txt{
@@ -2562,12 +2999,29 @@ a.contact-row__txt{
     height: 272px;
     align-items: flex-end;
     margin-top: -110px;
+    @include for-1024{
+      max-width: 307px;
+      text-align: center;
+    }
+
+    @include for-550{
+      max-width: 207px;
+      height: 158px;
+      margin-top: -50px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      padding-bottom: 25px;
+    }
   }
 
   &__btn-wrap{
     display: flex;
     justify-content: center;
     margin-top: -15px;
+    @include for-550{
+      margin-top: -10px;
+    }
   }
 
   &__btn{
@@ -2580,6 +3034,13 @@ a.contact-row__txt{
     align-items: center;
     text-transform: uppercase;
     transition: .3s;
+    @include for-550{
+      width: 75px;
+      height: 19px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
   &__btn:hover{
@@ -2594,6 +3055,9 @@ a.contact-row__txt{
     justify-content: center;
     align-items: center;
   }
+  @include for-480{
+    flex-direction: column;
+  }
   &__txt{
     color: #C9C9C9;
     font-style: italic;
@@ -2607,6 +3071,12 @@ a.contact-row__txt{
       line-height: 23px;
       color: #000000;
     }
+    @include for-480{
+      text-align: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   &__input{
@@ -2618,6 +3088,13 @@ a.contact-row__txt{
     margin-top: 6px;
     border: none;
     box-sizing: border-box;
+    @include for-1024{
+      background: #FFFFFF;
+      border: 1px solid #F8981D;
+      box-sizing: border-box;
+      border-radius: 2px;
+      box-shadow: none;
+    }
   }
 
   &__textarea{
@@ -2629,6 +3106,13 @@ a.contact-row__txt{
     max-width: 440px;
     width: 100%;
     height: 145px;
+    @include for-1024{
+      background: #FFFFFF;
+      border: 1px solid #F8981D;
+      box-sizing: border-box;
+      border-radius: 2px;
+      box-shadow: none;
+    }
   }
 
   &__submit{
@@ -2663,6 +3147,13 @@ a.contact-row__txt{
       line-height: 21px;
       text-transform: uppercase;
     }
+    @include for-480{
+      width: 66px;
+      height: 22px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
   &__submit-i:hover{
@@ -2675,8 +3166,58 @@ a.contact-row__txt{
   background: white;
   margin-top: 120px;
   margin-bottom: 82px;
+  @include for-1024{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  @include for-768{
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
   &__inner{
     display: flex;
+    position: relative;
+    @include for-1024{
+      background: url('../img/images/Rectangle101.png');
+    }
+  }
+
+  &__inner:before{
+    content: '';
+    position: absolute;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.45);
+    transform: rotate(90deg);
+    top: -58px;
+    width: 130px;
+    height: 0px;
+    left: 20px;
+    visibility: hidden;
+    @include for-1024{
+      visibility: visible;
+    }
+    @include for-768{
+      top: -32px;
+    }
+  }
+
+  &__inner:after{
+    content: '';
+    position: absolute;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.45);
+    transform: rotate(90deg);
+    top: -58px;
+    width: 130px;
+    height: 0px;
+    right: 20px;
+    visibility: hidden;
+    @include for-1024{
+      visibility: visible;
+    }
+    @include for-768{
+      top: -32px;
+    }
   }
 
   &__left{
@@ -2684,6 +3225,13 @@ a.contact-row__txt{
     max-width: 520px;
     width: 100%;
     margin-right: auto;
+    @include for-1024{
+      max-width: initial;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title{
@@ -2692,6 +3240,14 @@ a.contact-row__txt{
     font-size: 36px;
     line-height: 42px;
     padding-bottom: 20px;
+    @include for-768{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      text-transform: uppercase;
+      font-style: italic;
+    }
   }
 
   &__txt{
@@ -2700,16 +3256,38 @@ a.contact-row__txt{
     font-size: 18px;
     line-height: 21px;
     padding-bottom: 25px;
+    @include for-1024{
+      max-width: 509px;
+      text-align: center;
+    }
+
+    @include for-768{
+      font-style: italic;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+    }
   }
 
   &__right{
     padding-top: 50px;
+    @include for-1024{
+      display: none;
+    }
   }
 
 }
 
 .custom-block-btn.solutions{
   text-transform: uppercase;
+  @include for-768{
+    width: 100px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .connection{
@@ -2718,6 +3296,9 @@ a.contact-row__txt{
   background: white;
   padding: 50px 100px;
   margin-top: 70px;
+  @include for-768{
+    padding: 50px 30px;
+  }
   &__inner{
 
   }
@@ -2729,17 +3310,39 @@ a.contact-row__txt{
     line-height: 33px;
     color: #20274C;
     padding-bottom: 30px;
+    @include for-1024{
+      display: none;
+    }
   }
 
   &__list{
     display: flex;
     justify-content: space-between;
+    @include for-550{
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__item{
     padding: 20px 20px 5px;
     max-width: 304px;
     width: 100%;
+    @include for-550{
+      max-width: 220px;
+    }
+  }
+
+  &__item:first-child{
+    @include for-550{
+      margin-bottom: 50px;
+    }
+  }
+
+  &__item.last{
+    @include for-1024{
+      display: none;
+    }
   }
 
   &__img{
@@ -2748,7 +3351,10 @@ a.contact-row__txt{
   }
 
   &__img-img{
-
+    @include for-550{
+      width: 105px;
+      height: 105px;
+    }
   }
 
   &__item-title{
@@ -2758,6 +3364,12 @@ a.contact-row__txt{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
+    @include for-550{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+    }
   }
 
   &__txt{
@@ -2767,11 +3379,20 @@ a.contact-row__txt{
     line-height: 21px;
     text-align: center;
     margin-bottom: 12px;
+    @include for-550{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+    }
   }
 
   &__btns{
     display: flex;
     justify-content: space-between;
+    @include for-1024{
+      justify-content: center;
+    }
   }
 
   &__btn{
@@ -2789,12 +3410,22 @@ a.contact-row__txt{
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+    @include for-550{
+      width: 68px;
+      height: 23px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 
   &__btn.active{
     background: #FFA400;
     border-radius: 1px;
     opacity: 1;
+    @include for-1024{
+      display: none;
+    }
   }
 
 }
@@ -2804,18 +3435,84 @@ a.contact-row__txt{
   margin-top: 90px;
   padding: 55px 100px;
   padding-bottom: 0;
+  @include for-1024{
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 55px 30px;
+  }
+
+  @include for-480{
+    padding: 40px 30px;
+  }
+  @include for-420{
+    padding: 30px 0px;
+  }
 }
+
 .get-touch__inner{
   display: flex;
   border-bottom: 2px solid #20274C;
-  padding-bottom: 62px;
+  padding-bottom: 38px;
+  @include for-1024{
+    border: none;
+  }
+  @include for-420{
+    padding-bottom: 0;
+  }
+}
+
+.custom-geolocation:before{
+  content: '';
+  position: absolute;
+  border: 2px solid #FFFFFF;
+  transform: rotate(90deg);
+  top: -24px;
+  width: 120px;
+  height: 0px;
+  left: -28px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.45);
+  visibility: hidden;
+  @include for-1024{
+    visibility: visible;
+  }
+}
+
+.custom-geolocation:after{
+  content: '';
+  position: absolute;
+  border: 2px solid #FFFFFF;
+  transform: rotate(90deg);
+  top: -24px;
+  width: 120px;
+  height: 0px;
+  right: -28px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.45);
+  visibility: hidden;
+  @include for-1024{
+    visibility: visible;
+  }
 }
 
 .custom-geolocation{
+  position: relative;
   background: white;
   padding: 0 100px;
+  @include for-1024{
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 0;
+  }
+
 
 }
+
+.contact-us__img{
+  @include for-480{
+    width: 100%;
+  }
+}
+
 .custom-geolocation__inner{
   background: url('../img/images/Rectangle101.png');
   height: 350px;
@@ -2824,12 +3521,141 @@ a.contact-row__txt{
   align-items: center;
 }
 
+.custom-geolocation__inner.page-container{
+  @include for-420{
+    padding: 0;
+    height: 200px;
+  }
+}
+
 .custom-block-title.our{
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
+
+.blog-container{
+  background: white;
+  padding: 50px 100px;
+  max-width: 1500px;
+  margin: 0 auto;
+  &__wrap{
+
+  }
+
+  &__btn{
+    width: 116px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FDB64E;
+    box-shadow: 0px 0px 20px rgba(255, 164, 0, 0.75);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    opacity: 0.3;
+    margin-bottom: 30px;
+  }
+  &__inner{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 41px;
+    text-transform: uppercase;
+  }
+
+  &__img{
+    margin-bottom: 31px;
+  }
+
+  &__img-img{
+
+  }
+
+  &__data-icons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left{
+
+  }
+
+  &__row{
+    display: flex;
+  }
+
+  &__col{
+    display: flex;
+  }
+
+  &__col.left{
+    max-width: 200px;
+    width: 100%;
+  }
+
+  &__col span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__col-ico{
+    display: flex;
+    margin-right: 10px;
+    width: 20px;
+    height: auto;
+    justify-content: center;
+  }
+
+  &__col-txt{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__col-i{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__right{
+
+  }
+
+  &__ico{
+
+  }
+
+  &__title-txt{
+
+  }
+
+  &__txt{
+
+  }
+}
+
 
 
 .form-row__input.email{
@@ -2841,10 +3667,17 @@ a.contact-row__txt{
 .form-row.text-area{
   display: flex;
   flex-direction: column;
+  @include for-480{
+    padding-top: 0;
+  }
 }
 
 .form-col{
   margin-right: 50px;
+  @include for-480{
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
 }
 
 .form-col.email{
@@ -2902,11 +3735,22 @@ a.contact-row__txt{
     width: 30px;
     height: 30px;
   }
+  @include for-420{
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .page-tab-content__navs.mobile{
   @include for-768{
     margin-top: auto;
+  }
+}
+
+.page-tab-content{
+  padding-left: 0;
+  @include for-768{
+    height: 380px;
   }
 }
 
@@ -2928,11 +3772,18 @@ a.contact-row__txt{
 }
 
 .footer-col-title{
+  margin-bottom: 16px;
   @include for-1024{
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
+  }
+
+  @include for-480{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
   }
 
 }
@@ -2952,6 +3803,28 @@ a.contact-row__txt{
   z-index: 10;
   cursor: pointer;
   transition: .3s;
+
+  @include for-1400{
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+  }
+
+  @include for-768{
+    width: 50px;
+    height: 50px;
+  }
+
+  @include for-550{
+    width: 35px;
+    height: 35px;
+  }
+
+  @include for-420{
+    width: 30px;
+    height: 30px;
+  }
 
   &:hover{
     transform: scale(.8);

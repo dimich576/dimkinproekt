@@ -14,9 +14,15 @@ block content
           .main-info__txt.products after 12 years and over 40,000 customers, we know good experiences are built from a perfect blend of customer centricity, technology, and data, with a reliable partner at your side
           a(href="#").main-info__btn.products explore
         .main-info__img.products
-          img(src="./img/images/rafiki.png").main-info__img-img.products
+          picture
+            source(srcset="./img/images/rafiki.webp" type="image/webp")
+            img(src="./img/images/rafiki.png" alt="img").main-info__img-img.products
+          //img(src="./img/images/rafiki.png").main-info__img-img.products
         img(src="./img/images/block-3-box-illustration.svg").page-tab-content__background-img.first.solutions
-        img(src="./img/images/block-3-wave-illustration.png").page-tab-content__background-img.second.solutions
+        picture
+          source(srcset="./img/images/block-3-wave-illustration.webp" type="image/webp")
+          img(src="./img/images/block-3-wave-illustration.png" alt="img").page-tab-content__background-img.second.solutions
+        //img(src="./img/images/block-3-wave-illustration.png").page-tab-content__background-img.second.solutions
     .page-tabs.page-container.solutions
       .page-tabs__item(data-tab="tab-one").active Big data
       .page-tabs__item(data-tab="tab-two") Viber + SMS
@@ -25,6 +31,10 @@ block content
       .page-tabs__item(data-tab="tab-five") 2Way Numbers
       .page-tabs__item(data-tab="tab-six") Bulk SMS
     .page-tab-content.page-container.solutions
+      picture
+        source(srcset="./img/images/block-3-wave-illustration.webp" type="image/webp")
+        img(src="./img/images/block-3-wave-illustration.png" alt="img").page-tab-content__background-img.second.tab
+      //img(src="./img/images/block-3-wave-illustration.png").page-tab-content__background-img.second.tab
       .page-tab-content__inner.page-container.solutions
         .page-tab-content__left
           .page-tab__body(data-tab-content="tab-one").active
@@ -74,9 +84,12 @@ block content
         .check-out__left
           .check-out__title Check out our products
           .check-out__txt Reach every mobile phone on the planet - in seconds or less. Sinch provides all the tools you need to get closer to your customers.
-          .custom-block-btn.solutions get started
+          .custom-block-btn.solutions explore
         .check-out__right
-          img(src="./img/images/pana2.png")
+          picture
+            source(srcset="./img/images/pana2.webp" type="image/webp")
+            img(src="./img/images/pana2.png" alt="img")
+          //img(src="./img/images/pana2.png")
     .custom-wrap.contact-us
       .page-wide-block.contact-us
         .page-wide-block__inner.page-container.contact-us
@@ -99,7 +112,10 @@ block content
                   button(type="submit").form-row__submit-btn
                   a(href="").form-row__submit-i Send
             .page-wide-block__right-side.contact-us
-              img(src="./img/images/bro2.png").contact-us__img
+              picture
+                source(srcset="./img/images/bro2.webp" type="image/webp")
+                img(src="./img/images/bro2.png" alt="img").contact-us__img
+              //img(src="./img/images/bro2.png").contact-us__img
 
 
 

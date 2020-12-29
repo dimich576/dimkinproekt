@@ -6,48 +6,50 @@ block vars
   - var pageActive = "blogcontentpage";
 block content
   .main
-    .custom-border-title.products blog
+    .custom-border-title__wrap.page-container
+      .custom-border-title.products.blog blog
     .blog-container
-      .blog-container__btn back
-      .blog-container__inner
-        .blog-container__title Heavy engineering is not a distant drumbeat for you
-        .blog-container__img
-          img().blog-container__img-img
-        .blog-container__data-icons
-          .blog-container__left
-            .blog-container__row
-              .blog-container__col
-                .blog-container__col-ico
-                  img()
-                .blog-container__col-txt 27 October 2020
-              .blog-container__col
-                span Tags:
-                a(href="#") #tag1
-                a(href="#") #tag2
-                a(href="#") #tag3
-                a(href="#") #tag4
-            .blog-container__row
-              .blog-container__col
-                .blog-container__col-ico
-                  img()
-                .blog-container__col-txt 5 minutes read
-              .blog-container__col
-                span Author: Name Surname
-          .blog-container__right
-            .blog-container__ico
-              img()
-            .blog-container__ico
-              img()
-            .blog-container__ico
-              img()
-            .blog-container__ico
-              img()
-            .blog-container__ico
-              img()
-            .blog-container__ico
-              img()
-        .blog-container__title-txt
-          .blog-container__txt
+      .blog-container__wrap.page-container
+        a.blog-container__btn back
+        .blog-container__inner
+          .blog-container__title Heavy engineering is not a distant drumbeat for you
+          .blog-container__img
+            img(src="./img/images/rectangle92.png").blog-container__img-img
+          .blog-container__data-icons
+            .blog-container__left
+              .blog-container__row
+                .blog-container__col.left
+                  a.blog-container__col-ico
+                    include ../img/images/calendar_calendar.svg
+                  .blog-container__col-txt 27 October 2020
+                .blog-container__col
+                  span Tags:
+                  a(href="#").blog-container__col-i #tag1
+                  a(href="#").blog-container__col-i #tag2
+                  a(href="#").blog-container__col-i #tag3
+                  a(href="#").blog-container__col-i #tag4
+              .blog-container__row
+                .blog-container__col.left
+                  a.blog-container__col-ico
+                    include ../img/images/clock.svg
+                  .blog-container__col-txt 5 minutes read
+                .blog-container__col
+                  span Author: Name Surname
+            .blog-container__right
+              a.blog-container__ico
+                include ../img/images/link_02.svg
+              a.blog-container__ico
+                include ../img/images/instagram.svg
+              a.blog-container__ico
+                include ../img/images/facebook.svg
+              a.blog-container__ico
+                include ../img/images/google.svg
+              a.blog-container__ico
+                include ../img/images/Twitter.svg
+              a.blog-container__ico
+                include ../img/images/reddit.svg
+          .blog-container__title-txt
+            .blog-container__txt
 
 
 
