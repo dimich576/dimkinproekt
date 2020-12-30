@@ -20,7 +20,7 @@ block content
     .main-slider
       .main-slider__inner.page-container
         .page-container
-          span.page-title-flag PRODUCTS
+          span.page-title-flag(data-aos="fade-down") PRODUCTS
         .page-slider
           .swiper-container.site-slider-js
             .swiper-wrapper
@@ -28,9 +28,7 @@ block content
                 .product-card
                   .swiper-slide__title VIBER
                   .swiper-slide__img
-                    picture
-                      source(srcset="./img/images/Rectangle38.webp" type="image/webp")
-                      img(src="./img/images/Rectangle38.png" alt="img").swiper-slide__img-img
+                    img(src="./img/images/slider.svg" alt="img").swiper-slide__img-img
                     //img(src="./img/images/Rectangle38.png").swiper-slide__img-img
                   .swiper-slide__txt Free and secure calls and messages to anyone, anywhere. Keep your conversations going no matter where you are.
                   a(href="#").custom-block-btn.swiper-slide__btn About
@@ -38,9 +36,7 @@ block content
                 .product-card
                   .swiper-slide__title SMS
                   .swiper-slide__img
-                    picture
-                      source(srcset="./img/images/Rectangle38.webp" type="image/webp")
-                      img(src="./img/images/Rectangle38.png" alt="img").swiper-slide__img-img
+                    img(src="./img/images/slider.svg" alt="img").swiper-slide__img-img
                     //img(src="./img/images/Rectangle38.png").swiper-slide__img-img
                   .swiper-slide__txt Our SMS API helps you create customer journeys through conversations — even within the context of your app.
                   a(href="#").custom-block-btn.swiper-slide__btn About
@@ -48,9 +44,7 @@ block content
                 .product-card
                   .swiper-slide__title ADVERTISING SMS
                   .swiper-slide__img
-                    picture
-                      source(srcset="./img/images/Rectangle38.webp" type="image/webp")
-                      img(src="./img/images/Rectangle38.png" alt="img").swiper-slide__img-img
+                    img(src="./img/images/slider.svg" alt="img").swiper-slide__img-img
                     //img(src="./img/images/Rectangle38.png").swiper-slide__img-img
                   .swiper-slide__txt Text message advertising is the practice of sharing promotions, sales, or news updates with your customers via text message.
                   a(href="#").custom-block-btn.swiper-slide__btn About
@@ -117,24 +111,21 @@ block content
             a(href="#").page-tab-content__btn READ MORE
         .page-tab-content__right
           .page-tab-content__img
-            //img(src="./img/images/block-3-illlustration.png").page-tab-content__img-img
-            picture
-              source(srcset="./img/images/block-3-illlustration.webp" type="image/webp")
-              img(src="./img/images/block-3-illlustration.png" alt="img").page-tab-content__img-img
+            img(src="./img/images/block3illlustration.svg" alt="img").page-tab-content__img-img
           .page-tab-content__navs.mobile
             .page-tab-content__nav-item
               img(src="./img/images/short_left.svg").page-tab-content__nav-item-img
             .page-tab-content__nav-item.active
               img(src="./img/images/short_right.svg").page-tab-content__nav-item-img
     .page-sms.page-container
-      span.page-image-flag PRICES
+      span.page-image-flag(data-aos="fade-down") PRICES
         span.page-image-flag__img
           picture
             source(srcset="./img/images/$.webp" type="image/webp")
             img(src="./img/images/$.png" alt="img").page-image-flag__img-img
           //img(src="./img/images/$.png").page-image-flag__img-img
       .page-sms__inner.page-container
-        .page-sms-left
+        .page-sms-left(data-aos="flip-left" data-aos-duration="1500")
           .page-sms-left__inner
             .page-sms-left__title We send sms in all countries-in-world!
             .page-sms-left__row
@@ -164,13 +155,13 @@ block content
             .page-sms-left__btn
               a(href="#").custom-block-btn.page-sms-left__btn-i VIEW ALL
         .page-sms-right
-          .page-sms-right__block
+          .page-sms-right__block(data-aos="flip-right" data-aos-duration="1500")
             .page-sms-right__block-inner.first
               .page-sms-right__block-title.first Try SMS services
               .page-sms-right__block-txt.first register now <br> and receive 10 test SMS!
               .page-sms-right__block-btn.first
                 a(href="#").custom-block-btn.page-sms-right__block-btn-i.first REGISTER
-          .page-sms-right__block
+          .page-sms-right__block(data-aos="flip-right" data-aos-duration="1500")
             .page-sms-right__block-inner.second
               .page-sms-right__block-title.second Sending SMS in Ukraine
               .page-sms-right__block-row
@@ -189,27 +180,31 @@ block content
           .custom-block-btn__wrap.integration
             a(href="#").custom-block-btn.integration view more
         .page-wide-block__right-side.integration
-          .right-side__item.integration
+          .right-side__item.integration(data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000")
             .right-side__img
               picture
-                source(srcset="./img/images/Ellipse11.webp" type="image/webp")
-                img(src="./img/images/Ellipse11.png" alt="img").right-side__img-img
+                source(srcset="./img/images/ellipse11.webp" type="image/webp")
+                img(src="./img/images/ellipse11.png" alt="img").right-side__img-img
               //img(src="./img/images/Ellipse11.png").right-side__img-img
             .right-side__title.integration SMPP
             .right-side__txt In particular, consultation with a broad asset is an interesting experiment in testing new proposals.
             a(href="#").right-side__btn.integration ABOUT
-          .right-side__item
+          .right-side__item(data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000")
             .right-side__img
               picture
-                source(srcset="./img/images/Ellipse12.webp" type="image/webp")
-                img(src="./img/images/Ellipse12.png" alt="img").right-side__img-img
+                source(srcset="./img/images/ellipse12.webp" type="image/webp")
+                img(src="./img/images/ellipse12.png" alt="img").right-side__img-img
               //img(src="./img/images/Ellipse12.png").right-side__img-img
             .right-side__title.integration HTML
             .right-side__txt In particular, consultation with a broad asset is an interesting experiment in testing new proposals.
             a(href="#").right-side__btn.integration ABOUT
         .custom-block-btn__wrap.mobile
           a(href="#").custom-block-btn.integration-right view more
-    .custom-wrap.bro
+    .custom-wrap.bro(data-aos="fade-down")
       .page-wide-block.bro
         .page-wide-block__inner.page-container.bro
           .page-wide-block__left-side.bro
@@ -219,11 +214,9 @@ block content
             a(href="#").custom-block-btn.mar-top explore
           .page-wide-block__right-side.bro
             .right-side__img
-              picture
-                source(srcset="./img/images/bro.webp" type="image/webp")
-                img(src="./img/images/bro.png" alt="img").right-side__img-img
+              img(src="./img/images/bro_question.svg" alt="img").right-side__img-img
               //img(src="./img/images/bro.png").right-side__img-img
-    .custom-wrap.faq
+    .custom-wrap.faq(data-aos="fade-down")
       .page-wide-block.faq
         .page-wide-block__inner.page-container.faq
           .page-wide-block__left-side.faq
@@ -233,36 +226,34 @@ block content
             a(href="#").custom-block-btn.mar-top explore
           .page-wide-block__right-side.faq
             .right-side__img
-              picture
-                source(srcset="./img/images/bro.webp" type="image/webp")
-                img(src="./img/images/bro.png" alt="img").right-side__img-img
+              img(src="./img/images/bro_question.svg" alt="img").right-side__img-img
               //img(src="./img/images/bro.png").right-side__img-img
     .page-wide-block.contacts
       .page-wide-block__inner.page-container.contacts
         .page-wide-block__left-side.contacts
           .custom-border-title.contacts CONTACTS
-          .custom-block-title.contacts Get in touch
-          .contact-row
+          .custom-block-title.contacts(data-aos="fade-right") Get in touch
+          .contact-row(data-aos="fade-right")
             .contact-row__ico
               img(src="./img/images/user_circle.svg").contact-row__ico-ico
             .contact-row__name Director:
             .contact-row__txt Volodymyr Lobanov
-          .contact-row
+          .contact-row(data-aos="fade-right")
             .contact-row__ico
               img(src="./img/images/mail.svg").contact-row__ico-ico
             .contact-row__name E-Mail:
             .contact-row__txt sales@hicell.net
-          .contact-row
+          .contact-row(data-aos="fade-right")
             .contact-row__ico
               img(src="./img/images/phone.svg").contact-row__ico-ico
             .contact-row__name Tel UK:
             .contact-row__txt +447506865214
-          .contact-row
+          .contact-row(data-aos="fade-right")
             .contact-row__ico
               img(src="./img/images/location_outline.svg").contact-row__ico-ico
             .contact-row__name Address:
             .contact-row__txt 100 New Bond Street, First Floor, London, United Kingdom, W1S 1SP
-          .contact-row
+          .contact-row(data-aos="fade-right")
             .contact-row__ico
               picture
                 source(srcset="./img/images/linkedIn.webp" type="image/webp")
@@ -272,11 +263,9 @@ block content
             a(href="#").contact-row__txt Hicell
         .page-wide-block__right-side.contacts
           .right-side__img
-            picture
-              source(srcset="./img/images/illustration11.webp" type="image/webp")
-              img(src="./img/images/illustration11.png" alt="img").right-side__img
+            img(src="./img/images/contacts.svg" alt="img").right-side__img
             //img(src="./img/images/illustration11.png").right-side__img
-    .custom-wrap.geolocation
+    .custom-wrap.geolocation(data-aos="fade-down")
       .page-wide-block.geolocation
         .page-wide-block__inner.page-container.geolocation
           .custom-block-title.our Our geolocation

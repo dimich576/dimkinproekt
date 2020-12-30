@@ -14,9 +14,7 @@ block content
           .main-info__txt.products after 12 years and over 40,000 customers, we know good experiences are built from a perfect blend of customer centricity, technology, and data, with a reliable partner at your side
           a(href="#").main-info__btn.products explore
         .main-info__img.products
-          picture
-            source(srcset="./img/images/rafiki.webp" type="image/webp")
-            img(src="./img/images/rafiki.png" alt="img").main-info__img-img.products
+          img(src="./img/images/rafiki2.svg" alt="img").main-info__img-img.products
           //img(src="./img/images/rafiki.png").main-info__img-img.products
         img(src="./img/images/block-3-box-illustration.svg").page-tab-content__background-img.first.solutions
         picture
@@ -31,9 +29,7 @@ block content
       .page-tabs__item(data-tab="tab-five") 2Way Numbers
       .page-tabs__item(data-tab="tab-six") Bulk SMS
     .page-tab-content.page-container.solutions
-      picture
-        source(srcset="./img/images/block-3-wave-illustration.webp" type="image/webp")
-        img(src="./img/images/block-3-wave-illustration.png" alt="img").page-tab-content__background-img.second.tab
+      img(src="./img/images/block3illlustration.svg" alt="img").page-tab-content__background-img.second.tab
       //img(src="./img/images/block-3-wave-illustration.png").page-tab-content__background-img.second.tab
       .page-tab-content__inner.page-container.solutions
         .page-tab-content__left
@@ -90,7 +86,7 @@ block content
             source(srcset="./img/images/pana2.webp" type="image/webp")
             img(src="./img/images/pana2.png" alt="img")
           //img(src="./img/images/pana2.png")
-    .custom-wrap.contact-us
+    .custom-wrap.contact-us(data-aos="fade-down")
       .page-wide-block.contact-us
         .page-wide-block__inner.page-container.contact-us
           .custom-border-title.contact-us contact us
@@ -99,22 +95,20 @@ block content
               .contact-us__text *If you have any question please visit our Help desk. If you can`t find the answer please call us or e-mail
               form
                 .form-row
-                  .form-col
+                  .form-col.site-form__row
                     .form-row__txt Your name
-                    input(type="text").form-row__input
-                  .form-col.email
+                    input(type="text").form-row__input.required
+                  .form-col.email.site-form__row
                     .form-row__txt Your email
-                    input(type="email").form-row__input.email
-                .form-row.text-area
+                    input(type="email").form-row__input.email.required
+                .form-row.text-area.site-form__row
                   .form-row__txt Type your message
-                  textarea.form-row__textarea
+                  textarea.form-row__textarea.required
                 .form-row__submit
                   button(type="submit").form-row__submit-btn
-                  a(href="").form-row__submit-i Send
+                  a(href="").form-row__submit-i.site-form-submit-js Send
             .page-wide-block__right-side.contact-us
-              picture
-                source(srcset="./img/images/bro2.webp" type="image/webp")
-                img(src="./img/images/bro2.png" alt="img").contact-us__img
+              img(src="./img/images/bro2.svg" alt="img").contact-us__img
               //img(src="./img/images/bro2.png").contact-us__img
 
 

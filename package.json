@@ -57,6 +57,7 @@
     "parallax-js": "^3.1.0",
     "popper.js": "^1.14.3",
     "rellax": "^1.12.1",
+    "select2": "^4.0.13",
     "skrollr": "^0.6.26",
     "slick-carousel": "^1.8.1",
     "swiper": "^6.2.0"

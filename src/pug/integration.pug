@@ -14,26 +14,28 @@ block content
           .main-info__txt.products here are collected a variety of options for working with our system especially for you!
           a(href="#").main-info__btn.products explore
         .main-info__img.products
-          picture
-            source(srcset="./img/images/bro3.webp" type="image/webp")
-            img(src="./img/images/bro3.png" alt="img").main-info__img-img.products
+          img(src="./img/images/bro3.svg" alt="img").main-info__img-img.products
           //img(src="./img/images/bro3.png").main-info__img-img.products
     .connection
       .connection__inner.page-container
         .connection__title Connection options
         .connection__list
-          .connection__item
+          .connection__item(data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000")
             .connection__img
               picture
-                source(srcset="./img/images/Ellipse11.webp" type="image/webp")
-                img(src="./img/images/Ellipse11.png" alt="img").connection__img-img
+                source(srcset="./img/images/ellipse11.webp" type="image/webp")
+                img(src="./img/images/ellipse11.png" alt="img").connection__img-img
               //img(src="./img/images/Ellipse11.png").connection__img-img
             .connection__item-title SMPP
             .connection__txt In particular, consultation with a broad asset is an interesting experiment in testing new proposals.
             .connection__btns
               a(href="#").connection__btn about
               a(href="#").connection__btn.active connect
-          .connection__item
+          .connection__item(data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000")
             .connection__img
               picture
                 source(srcset="./img/images/ellipse12.webp" type="image/webp")
@@ -44,7 +46,9 @@ block content
             .connection__btns
               a(href="#").connection__btn about
               a(href="#").connection__btn.active connect
-          .connection__item.last
+          .connection__item.last(data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000")
             .connection__img
               picture
                 source(srcset="./img/images/ellipse13.webp" type="image/webp")
@@ -55,7 +59,7 @@ block content
             .connection__btns
               a(href="#").connection__btn about
               a(href="#").connection__btn.active connect
-    .custom-wrap.contact-us
+    .custom-wrap.contact-us(data-aos="fade-down")
       .page-wide-block.contact-us
         .page-wide-block__inner.page-container.contact-us
           .custom-border-title.contact-us contact us
@@ -64,22 +68,20 @@ block content
               .contact-us__text *If you have any question please visit our Help desk. If you can`t find the answer please call us or e-mail
               form
                 .form-row
-                  .form-col
+                  .form-col.site-form__row
                     .form-row__txt Your name
-                    input(type="text").form-row__input
-                  .form-col.email
+                    input(type="text").form-row__input.required
+                  .form-col.email.site-form__row
                     .form-row__txt Your email
-                    input(type="email").form-row__input.email
-                .form-row.text-area
+                    input(type="email").form-row__input.email.required
+                .form-row.text-area.site-form__row
                   .form-row__txt Type your message
-                  textarea.form-row__textarea
+                  textarea.form-row__textarea.required
                 .form-row__submit
                   button(type="submit").form-row__submit-btn
-                  a(href="").form-row__submit-i Send
+                  a(href="").form-row__submit-i.site-form-submit-js Send
             .page-wide-block__right-side.contact-us
-              picture
-                source(srcset="./img/images/bro2.webp" type="image/webp")
-                img(src="./img/images/bro2.png" alt="img").contact-us__img
+              img(src="./img/images/bro2.svg" alt="img").contact-us__img
               //img(src="./img/images/bro2.png").contact-us__img
 
 
