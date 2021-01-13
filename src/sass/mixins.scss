@@ -109,3 +109,7 @@
 @mixin from-680-for-1024 {
   @media (min-width: 680px) and (max-width: 1030px) { @content; }
 }
+
+@mixin from-767-for-800 {
+  @media (min-width: 767px) and (max-width: 800px) { @content; }
+}

@@ -1,0 +1,205 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Events page";
+  - var pageClass = "eventspage";
+  - var pageActive = "eventspage";
+block content
+  .main
+    .main-info.products
+      .main-info__inner.container.page-container.products.d-events
+        .main-info__block.products
+          .custom-border-title.products Events
+          h1.main-info__title.products Upcoming Events
+          .main-info__txt.products.events-products take a look at the events we will be attending over the next few months. get in touch to schedule a meeting with the team!
+          a(href="#").main-info__btn.products read
+        .main-info__img.products
+          img(src="./img/images/bro123.svg" alt="img").main-info__img-img.products
+          //img(src="./img/images/bro3.png").main-info__img-img.products
+    .events
+      .events__inner.page-container
+        .events__title Our nearest event
+        .events__block(data-aos="zoom-in-down")
+          .events__left
+            .events__left-top
+              .events__left-top-item
+                .events__left-top-ico
+                  img(src="./img/images/clock-item.svg" alt="img")
+                .events__left-top-text 5 days to go
+              .events__left-top-item
+                .events__left-top-ico
+                  img(src="./img/images/user.svg" alt="img")
+                .events__left-top-text 20 places remaining
+            .events__left-title Constant quantitative growth
+            .events__left-btns
+              .events__left-btn.first register
+              .events__left-btn about
+          .events__center
+            img(src="./img/images/pana10.svg" alt="img")
+          .events__right
+            img(src="./img/images/illustration10.svg" alt="img")
+          .events__btns-mobile
+            .events__left-btn.first register
+            .events__left-btn about
+    .events.bottom-event-block
+      .events__inner.page-container
+        .events__title.second Our Upcoming Events
+          .events__selects
+            .events__select
+              select.js-example-basic-single(name='state')
+                option(value='AL') DATA
+                option(value='WY') Wyoming
+            .events__select
+              select.js-example-basic-single(name='state')
+                option(value='AL') REGION
+                option(value='WY') Wyoming
+            .events__select.last-select
+              select.js-example-basic-single(name='state')
+                option(value='AL') EVENT TYPE
+                option(value='WY') Wyoming
+        .events__list
+          .events__item(data-aos="zoom-in-down")
+            .events__center-item
+              img(src="./img/images/pana10.svg" alt="img")
+            .events__item-col.img
+              img(src="./img/images/illustration10.svg" alt="img")
+            .events__item-col.center
+              .events__item-col-title Constant quantitative growth
+              .events__item-col-txt The significance of these problems is so obvious that the strengthening and development of the structure is an interesting experiment in testing directions.
+              .events__item-col-btn about
+            .events__item-col.date
+              .events__item-col-date.one
+                img(src="./img/images/clock-item.svg" alt="img").events__item-col-date-img
+                .events__item-col-date-txt 5 days to go
+              .events__item-col-name free
+              .events__item-col-date
+                img(src="./img/images/user.svg" alt="img").events__item-col-date-img
+                .events__item-col-date-txt 20 places remaining
+            .events__item-absolute-txt 20th Nov <br> 2020
+            a.events__item-absolute-btn register
+            .events__item-col-txt.mobile The significance of these problems is so obvious that the strengthening and development of the structure is an interesting experiment in testing directions.
+            .events__btns-mobile.bottom
+              .events__left-btn.first register
+              .events__left-btn about
+          .events__item(data-aos="zoom-in-down")
+            .events__center-item
+              img(src="./img/images/pana10.svg" alt="img")
+            .events__item-col.img
+              img(src="./img/images/illustration10.svg" alt="img")
+            .events__item-col.center
+              .events__item-col-title Diverse and rich experience frame
+              .events__item-col-txt  Ideological considerations of a higher order, as well as the framework and place of training of personnel, provide a wide range of (specialists) participation
+              .events__item-col-btn about
+            .events__item-col.date
+              .events__item-col-date.one
+                img(src="./img/images/clock-item.svg" alt="img").events__item-col-date-img
+                .events__item-col-date-txt 8 days to go
+              .events__item-col-name free
+              .events__item-col-date
+                img(src="./img/images/user.svg" alt="img").events__item-col-date-img
+                .events__item-col-date-txt 30 places remaining
+            .events__item-absolute-txt 23th Nov <br> 2020
+            a.events__item-absolute-btn register
+            .events__item-col-txt.mobile The significance of these problems is so obvious that the strengthening and development of the structure is an interesting experiment in testing directions.
+            .events__btns-mobile.bottom
+              .events__left-btn.first register
+              .events__left-btn about
+          .events__item(data-aos="zoom-in-down")
+            .events__center-item
+              img(src="./img/images/pana10.svg" alt="img")
+            .events__item-col.img
+              img(src="./img/images/illustration10.svg" alt="img")
+            .events__item-col.center
+              .events__item-col-title Administrative conditions
+              .events__item-col-txt The task of the organization, in particular the framework and place of training of personnel, require the definition and clarification of the directions of progressive development
+              .events__item-col-btn about
+            .events__item-col.date
+              .events__item-col-date.one
+                img(src="./img/images/clock-item.svg" alt="img").events__item-col-date-img
+                .events__item-col-date-txt 10 days to go
+              .events__item-col-name free
+              .events__item-col-date
+                img(src="./img/images/user.svg" alt="img").events__item-col-date-img
+                .events__item-col-date-txt 35 places remaining
+            .events__item-absolute-txt 25th Nov <br> 2020
+            a.events__item-absolute-btn register
+            .events__item-col-txt.mobile The significance of these problems is so obvious that the strengthening and development of the structure is an interesting experiment in testing directions.
+            .events__btns-mobile.bottom
+              .events__left-btn.first register
+              .events__left-btn about
+          .events__item(data-aos="zoom-in-down")
+            .events__center-item
+              img(src="./img/images/pana10.svg" alt="img")
+            .events__item-col.img
+              img(src="./img/images/illustration10.svg" alt="img")
+            .events__item-col.center
+              .events__item-col-title Higher Order Considerations
+              .events__item-col-txt  As well as strengthening and developing the structure, it is an interesting experiment to test the positions taken by the participants in relation to the assigned tasks.
+              .events__item-col-btn about
+            .events__item-col.date
+              .events__item-col-date.one
+                img(src="./img/images/clock-item.svg" alt="img").events__item-col-date-img
+                .events__item-col-date-txt 11 days to go
+              .events__item-col-name free
+              .events__item-col-date
+                img(src="./img/images/user.svg" alt="img").events__item-col-date-img
+                .events__item-col-date-txt 33 places remaining
+            .events__item-absolute-txt 26th Nov <br> 2020
+            a.events__item-absolute-btn register
+            .events__item-col-txt.mobile The significance of these problems is so obvious that the strengthening and development of the structure is an interesting experiment in testing directions.
+            .events__btns-mobile.bottom.last
+              .events__left-btn.first register
+              .events__left-btn about
+        .pagination.d-events
+          .pagination__inner
+            .pagination__item.active 1
+            .pagination__item 2
+            .pagination__item 3
+            .pagination__item ...
+            .pagination__item 10
+    .subscribe.events
+      .subscribe__inner.page-container
+        .subscribe__left
+          .subscribe__title SUBSCRIBE TO OUR BLOG
+          .subscribe__txt Best practices for customer engagement strategies
+          form
+            .subscribe-form__txt Email adress
+            .subscribe-form__txt.mobile Your email
+            .subscribe-form__row
+              input(type="email" placeholder="Email adress").subscribe-form__input.required
+              button(type="submit").subscribe-form__button
+              a(href="#").subscribe-form__i subscribe
+          .subscribe__subtxt Be the first to get updates, tips, and tricks to transform your customer engagement! Check the boxes which best suit your interests and we’ll be in touch.
+        .subscribe__right
+          picture
+            source(srcset="./img/images/illustration-blog.webp" type="image/webp")
+            img(src="./img/images/illustration-blog.png" alt="img")
+    .custom-wrap.contact-us(data-aos="fade-down")
+      .page-wide-block.contact-us
+        .page-wide-block__inner.page-container.contact-us
+          .custom-border-title.contact-us contact us
+          .contact-us__container
+            .page-wide-block__left-side.contact-us
+              .contact-us__text *If you have any question please visit our Help desk. If you can`t find the answer please call us or e-mail
+              form
+                .form-row
+                  .form-col.site-form__row
+                    .form-row__txt Your name
+                    input(type="text").form-row__input.required
+                  .form-col.email.site-form__row
+                    .form-row__txt Your email
+                    input(type="email").form-row__input.email.required
+                .form-row.text-area.site-form__row
+                  .form-row__txt Type your message
+                  textarea.form-row__textarea.required
+                .form-row__submit
+                  button(type="submit").form-row__submit-btn
+                  a(href="").form-row__submit-i.site-form-submit-js send
+            .page-wide-block__right-side.contact-us
+              img(src="./img/images/bro2.svg" alt="img").contact-us__img
+              //img(src="./img/images/bro2.png").contact-us__img
+
+
+
+
+

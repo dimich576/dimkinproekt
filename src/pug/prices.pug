@@ -1,0 +1,278 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Prices page";
+  - var pageClass = "pricespage";
+  - var pageActive = "pricespage";
+block content
+  .main
+    .main-info.products
+      .main-info__inner.container.page-container.products.solutions.d-prices
+        .main-info__block.products
+          .custom-border-title.products prices
+          h1.main-info__title.products.d-prices Sending SMS to other countries
+          .main-info__txt.products.d-prices  reach every mobile phone on the planet - in seconds or less. Sinch provides all the tools you need to get closer to your customers.
+          a(href="#").main-info__btn.products.prices-btn.d-prices get started
+        .main-info__img.products
+          img(src="./img/images/bro5.svg" alt="img").main-info__img-img.products.d-prices
+          //img(src="./img/images/rafiki.png").main-info__img-img.products
+        img(src="./img/images/block-3-box-illustration.svg" alt="img").page-tab-content__background-img.first.solutions
+    .sms.page-container.d-prices
+      .page-sms-right__block.d-prices(data-aos="flip-right" data-aos-duration="1500")
+        .page-sms-right__block-inner.second.d-prices
+          .page-sms-right__block-title.second Sending SMS in Ukraine
+          .page-sms-right__block-row
+            .page-sms-right__block-row-title.second With local sender:
+            .page-sms-right__block-row-price.second.d-prices 0.38 UAH
+          .page-sms-right__block-row
+            .page-sms-right__block-row-title.second With an international sender:
+            .page-sms-right__block-row-price.second.d-prices 2.20 UAH
+          .page-sms-right__block-subtext For one sent SMS message to all operators in Ukraine
+      .page-sms-right__block.d-prices(data-aos="flip-right" data-aos-duration="1500")
+        .page-sms-right__block-inner.first
+          .page-sms-right__block-title.first.d-prices Try SMS services
+          .page-sms-right__block-txt.first.d-prices register now <br> and receive 10 test SMS!
+          .page-sms-right__block-btn.first
+            a(href="#").custom-block-btn.page-sms-right__block-btn-i.first register
+    .sending.d-prices.mgtop
+      .sending__inner.page-container
+        .sending__row.d-prices
+          .sending__row-inner
+            .sending__title.d-prices Sending SMS to other countries
+            .sending__search
+              input(type="text" placeholder="Enter your country")
+              picture
+                source(srcset="./img/images/search-icon.webp" type="image/webp")
+                img(src="./img/images/search-icon.png" alt="img").sending__img
+          .sending__select
+            select.js-example-basic-single(name='state')
+              option(value='AL') UAH
+              option(value='WY') Wyoming
+        .sending__subtext For one sent SMS, including VAT
+        .sending__subtext * - different price for each operator
+        .sending__select.mobile
+          select.js-example-basic-single(name='state')
+            option(value='AL') UAH
+            option(value='WY') Wyoming
+        .sending__search-img.search-hidden-mobile-js
+          img(src="./img/images/send-search.svg" alt="img")
+        .sending__body
+          .sending__body-inner
+            .accordeon__wrap
+              .sending__accordeon.active
+                .accordeon__inner
+                  .sending__name.first *Afghanistan
+                  .sending__cost.first Cost
+                .sending__list(style="display: block;")
+                  .sending__list-item
+                    a.sending__list-name MTN (Areeba)
+                    .sending__list-price 1.2
+                  .sending__list-item
+                    a.sending__list-name Roshan
+                    .sending__list-price 1.53
+                  .sending__list-item
+                    a.sending__list-name AWCC
+                    .sending__list-price 1.3
+                  .sending__list-item
+                    a.sending__list-name Etisalat
+                    .sending__list-price 2.1
+              .sending__accordeon
+                .accordeon__inner
+                  .sending__name *Albania
+                  .sending__cost Cost
+                .sending__list
+                  .sending__list-item
+                    a.sending__list-name MTN (Areeba)
+                    .sending__list-price 1.2
+                  .sending__list-item
+                    a.sending__list-name Roshan
+                    .sending__list-price 1.53
+                  .sending__list-item
+                    a.sending__list-name AWCC
+                    .sending__list-price 1.3
+                  .sending__list-item
+                    a.sending__list-name Etisalat
+                    .sending__list-price 2.1
+              .sending__accordeon
+                .accordeon__inner
+                  .sending__name Algeria
+                  .sending__cost Cost
+                .sending__list
+                  .sending__list-item
+                    a.sending__list-name MTN (Areeba)
+                    .sending__list-price 1.2
+                  .sending__list-item
+                    a.sending__list-name Roshan
+                    .sending__list-price 1.53
+                  .sending__list-item
+                    a.sending__list-name AWCC
+                    .sending__list-price 1.3
+                  .sending__list-item
+                    a.sending__list-name Etisalat
+                    .sending__list-price 2.1
+              .sending__accordeon
+                .accordeon__inner
+                  .sending__name *Andorra
+                  .sending__cost Cost
+                .sending__list
+                  .sending__list-item
+                    a.sending__list-name MTN (Areeba)
+                    .sending__list-price 1.2
+                  .sending__list-item
+                    a.sending__list-name Roshan
+                    .sending__list-price 1.53
+                  .sending__list-item
+                    a.sending__list-name AWCC
+                    .sending__list-price 1.3
+                  .sending__list-item
+                    a.sending__list-name Etisalat
+                    .sending__list-price 2.1
+              .sending__accordeon
+                .accordeon__inner
+                  .sending__name Angola
+                  .sending__cost Cost
+                .sending__list
+                  .sending__list-item
+                    a.sending__list-name MTN (Areeba)
+                    .sending__list-price 1.2
+                  .sending__list-item
+                    a.sending__list-name Roshan
+                    .sending__list-price 1.53
+                  .sending__list-item
+                    a.sending__list-name AWCC
+                    .sending__list-price 1.3
+                  .sending__list-item
+                    a.sending__list-name Etisalat
+                    .sending__list-price 2.1
+              .sending__accordeon
+                .accordeon__inner
+                  .sending__name Antigua and Barbuda
+                  .sending__cost Cost
+                .sending__list
+                  .sending__list-item
+                    a.sending__list-name MTN (Areeba)
+                    .sending__list-price 1.2
+                  .sending__list-item
+                    a.sending__list-name Roshan
+                    .sending__list-price 1.53
+                  .sending__list-item
+                    a.sending__list-name AWCC
+                    .sending__list-price 1.3
+                  .sending__list-item
+                    a.sending__list-name Etisalat
+                    .sending__list-price 2.1
+              .sending__accordeon
+                .accordeon__inner
+                  .sending__name *Argentina
+                  .sending__cost Cost
+                .sending__list
+                  .sending__list-item
+                    a.sending__list-name MTN (Areeba)
+                    .sending__list-price 1.2
+                  .sending__list-item
+                    a.sending__list-name Roshan
+                    .sending__list-price 1.53
+                  .sending__list-item
+                    a.sending__list-name AWCC
+                    .sending__list-price 1.3
+                  .sending__list-item
+                    a.sending__list-name Etisalat
+                    .sending__list-price 2.1
+              .sending__accordeon
+                .accordeon__inner
+                  .sending__name Armenia
+                  .sending__cost Cost
+                .sending__list
+                  .sending__list-item
+                    a.sending__list-name MTN (Areeba)
+                    .sending__list-price 1.2
+                  .sending__list-item
+                    a.sending__list-name Roshan
+                    .sending__list-price 1.53
+                  .sending__list-item
+                    a.sending__list-name AWCC
+                    .sending__list-price 1.3
+                  .sending__list-item
+                    a.sending__list-name Etisalat
+                    .sending__list-price 2.1
+              .sending__accordeon
+                .accordeon__inner
+                  .sending__name Armenia
+                  .sending__cost Cost
+                .sending__list
+                  .sending__list-item
+                    a.sending__list-name MTN (Areeba)
+                    .sending__list-price 1.2
+                  .sending__list-item
+                    a.sending__list-name Roshan
+                    .sending__list-price 1.53
+                  .sending__list-item
+                    a.sending__list-name AWCC
+                    .sending__list-price 1.3
+                  .sending__list-item
+                    a.sending__list-name Etisalat
+                    .sending__list-price 2.1
+              .sending__accordeon
+                .accordeon__inner
+                  .sending__name Armenia
+                  .sending__cost Cost
+                .sending__list
+                  .sending__list-item
+                    a.sending__list-name MTN (Areeba)
+                    .sending__list-price 1.2
+                  .sending__list-item
+                    a.sending__list-name Roshan
+                    .sending__list-price 1.53
+                  .sending__list-item
+                    a.sending__list-name AWCC
+                    .sending__list-price 1.3
+                  .sending__list-item
+                    a.sending__list-name Etisalat
+                    .sending__list-price 2.1
+              .sending__accordeon
+                .accordeon__inner
+                  .sending__name Armenia
+                  .sending__cost Cost
+                .sending__list
+                  .sending__list-item
+                    a.sending__list-name MTN (Areeba)
+                    .sending__list-price 1.2
+                  .sending__list-item
+                    a.sending__list-name Roshan
+                    .sending__list-price 1.53
+                  .sending__list-item
+                    a.sending__list-name AWCC
+                    .sending__list-price 1.3
+                  .sending__list-item
+                    a.sending__list-name Etisalat
+                    .sending__list-price 2.1
+
+    .custom-wrap.contact-us(data-aos="fade-down")
+      .page-wide-block.contact-us
+        .page-wide-block__inner.page-container.contact-us
+          .custom-border-title.contact-us contact us
+          .contact-us__container
+            .page-wide-block__left-side.contact-us
+              .contact-us__text *If you have any question please visit our Help desk. If you can`t find the answer please call us or e-mail
+              form
+                .form-row
+                  .form-col.site-form__row
+                    .form-row__txt Your name
+                    input(type="text").form-row__input.required
+                  .form-col.email.site-form__row
+                    .form-row__txt Your email
+                    input(type="email").form-row__input.email.required
+                .form-row.text-area.site-form__row
+                  .form-row__txt Type your message
+                  textarea.form-row__textarea.required
+                .form-row__submit
+                  button(type="submit").form-row__submit-btn
+                  a(href="").form-row__submit-i.site-form-submit-js send
+            .page-wide-block__right-side.contact-us
+              img(src="./img/images/bro2.svg" alt="img").contact-us__img
+              //img(src="./img/images/bro2.png").contact-us__img
+
+
+
+
+
